@@ -1,0 +1,25 @@
+.link {
+  position: relative;
+  text-decoration: none;
+}
+
+.link::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--accidental);
+  left: 0;
+  bottom: -6px;
+  transition: width 0.4s;
+}
+
+.link:active {
+  opacity: 0.7;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover::after {
+    width: 100%;
+  }
+}

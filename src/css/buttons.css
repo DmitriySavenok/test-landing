@@ -9,6 +9,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  transition: 0.4s;
 }
 
 .button--color {
@@ -21,4 +22,19 @@
   border: 1px solid var(--btn-border-dark);
   background-color: var(--white);
   color: var(--btn-text-dark);
+}
+
+.button--color:active,
+.button--white:active {
+  box-shadow: 0 0 10px 12px rgba(26, 18, 36, 0.2) inset;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button--color:hover {
+    background-color: var(--btn-fill-hover);
+  }
+
+  .button--white:hover {
+    background-color: var(--btn-white-hover);
+  }
 }

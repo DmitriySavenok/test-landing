@@ -27,7 +27,6 @@
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .header__nav-link::after {
@@ -69,7 +68,7 @@
 .header__menu-btn--close span:nth-child(2) {
   opacity: 0;
   transform: rotate(180deg);
-  transition: width 0.4s;
+  transition: 0.4s;
 }
 
 .header__menu-btn--close span:nth-child(3) {
@@ -80,13 +79,14 @@
   .header__nav-link:hover {
     color: var(--accidental);
   }
-
-  .header__nav-link:hover::after {
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
+  .header__logo svg {
+    max-width: 150px;
+    height: auto;
+  }
+
 	.header__menu-btn {
 		display: flex;
 	}
