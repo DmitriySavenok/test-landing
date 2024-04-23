@@ -9,6 +9,8 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -26,7 +28,8 @@
 
 .button--color:active,
 .button--white:active {
-  box-shadow: 0 0 10px 12px rgba(26, 18, 36, 0.2) inset;
+  -webkit-box-shadow: 0 0 10px 12px rgba(26, 18, 36, 0.2) inset;
+          box-shadow: 0 0 10px 12px rgba(26, 18, 36, 0.2) inset;
 }
 
 @media (hover: hover) and (pointer: fine) {

@@ -11,6 +11,8 @@
   background-color: var(--accidental);
   left: 0;
   bottom: -6px;
+  -webkit-transition: width 0.4s;
+  -o-transition: width 0.4s;
   transition: width 0.4s;
 }
 
