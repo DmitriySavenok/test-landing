@@ -13,3 +13,8 @@
   width: 100%;
   max-width: 1230px;
 }
+
+.scroll-fixed {
+  overflow: hidden;
+  height: 100vh;
+}
