@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -15,6 +16,15 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1230px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.section-title span {
+  color: var(--accidental);
 }
 
 .scroll-fixed {

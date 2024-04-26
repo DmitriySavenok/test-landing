@@ -1,7 +1,7 @@
 .hero {
   padding: 200px 0;
   color: var(--black);
-  background-image: url('../images/backgrounds/hero-background.jpg');
+  background-image: url('../images/backgrounds/hero-background.webp');
   background-position: center;
   background-size: cover;
 }
@@ -76,7 +76,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
-    background: rgba(16, 16, 29, 0.5);
+    background: rgba(16, 16, 29, 0.7);
     padding: 20px 10px;
     color: var(--white);
     gap: 40px;

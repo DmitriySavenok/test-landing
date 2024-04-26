@@ -4,6 +4,8 @@
   position: fixed;
   top: 0;
   background: rgba(16, 16, 29, 0.9);
+  z-index: 100;
+  transition: ease 0.4s;
 }
 
 .header__grid {
@@ -127,6 +129,10 @@
 
   .header.header--menu-opened {
     height: 100%;
+  }
+
+  .header--menu-opened  {
+    background: rgba(16, 16, 29, 0.97);
   }
 
   .header.header--menu-opened .header__grid {
