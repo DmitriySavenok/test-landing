@@ -5,8 +5,11 @@
   top: 0;
   background: rgba(16, 16, 29, 0.9);
   z-index: 100;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
-  animation: headerShow ease 2s;
+  -webkit-animation: headerShow ease 2s;
+          animation: headerShow ease 2s;
 }
 
 .header__grid {
@@ -205,12 +208,26 @@
   }
 }
 
-@keyframes headerShow {
+@-webkit-keyframes headerShow {
   0% {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes headerShow {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
