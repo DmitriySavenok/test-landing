@@ -21,12 +21,14 @@
 
   <link rel="stylesheet" href="src/css/header.css">
   <link rel="stylesheet" href="src/css/hero.css">
+  <link rel="stylesheet" href="src/css/about.css">
   <link rel="stylesheet" href="src/css/order.css">
   <link rel="stylesheet" href="src/css/footer.css">
 
   <script defer src="src/js/actualYear.js"></script>
   <script defer src="src/js/header.js"></script>
   <script defer src="src/js/orderForm.js"></script>
+  <script defer src="src/js/aboutReviewSlider.js"></script>
 
   <title>LOREMIPSUM.NET</title>
 </head>
@@ -46,7 +48,7 @@
       </button>
       <nav class="header__nav">
         <a class="header__nav-link link header__nav-link--active" href="#">Бизнес</a>
-        <a class="header__nav-link link" href="#">О нас</a>
+        <a class="header__nav-link link" href="#about">О нас</a>
         <a class="header__nav-link link" href="#">Цена</a>
         <a class="header__nav-link link" href="#order">Оформить заказ</a>
       </nav>
@@ -167,9 +169,90 @@
 
         <input class="order__form-submit button button--color" type='submit' value='Отправить'>
       </form>
-
     </section>
     
+    <section class="about" id="about">
+      <h2 class="about__title section-title">Что говорят наши <span>клиенты</span></h2>
+      <div class="about__grid container">
+        <div class="about__review">
+          <div class="about__review-slider" id="about-review">
+            
+            <div class="about__review-card">
+              <div class="about__review-card-head">
+                <div class="about__review-card-user">
+                  <picture>
+                    <source srcset="src/images/photo/user-photo.avif" type="image/avif">
+                    <source srcset="src/images/photo/user-photo.webp" type="image/webp">
+                    <source srcset="src/images/photo/user-photo.jpg" type="image/jpg">
+                    <img class="about__review-card-photo" width="80" height="80" src="src/images/photo/user-photo.jpg" alt="Клиент компании. Молодой человек улыбается.">
+                  </picture>
+                </div>
+                <h3>Павлов Константин</h3>
+                <span>Предприниматель</span>
+              </div>
+              <p class="about__review-card-info">Слайдер отзывов выполнен с минимальным приминением JavaScript. Функионал базируется на CSS-свойстве "scroll-snap-type".</p>
+            </div>
+
+            <div class="about__review-card">
+              <div class="about__review-card-head">
+                <div class="about__review-card-user">
+                  <img src="" alt="" srcset="">
+                </div>
+                <h3>Ф.И.О. Клиента</h3>
+                <span>Профессия</span>
+              </div>
+              <p class="about__review-card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque pariatur odio unde sequi reprehenderit eos voluptatum aliquam eveniet. Obcaecati quasi architecto officia quas modi dolorem assumenda optio totam reiciendis.</p>
+            </div>
+
+            <div class="about__review-card">
+              <div class="about__review-card-head">
+                <div class="about__review-card-user">
+                  <img src="" alt="" srcset="">
+                </div>
+                <h3>Риков Степан</h3>
+                <span>Строитель</span>
+              </div>
+              <p class="about__review-card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque pariatur odio unde sequi reprehenderit eos voluptatum aliquam eveniet. Obcaecati quasi architecto officia quas modi dolorem assumenda optio totam reiciendis.</p>
+            </div>
+
+            <div class="about__review-card">
+              <div class="about__review-card-head">
+                <div class="about__review-card-user">
+                  <img src="" alt="" srcset="">
+                </div>
+                <h3>Солова Софья</h3>
+                <span>Диспетчер</span>
+              </div>
+              <p class="about__review-card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque pariatur odio unde sequi reprehenderit eos voluptatum aliquam eveniet. Obcaecati quasi architecto officia quas modi dolorem assumenda optio totam reiciendis.</p>
+            </div>
+
+            <div class="about__review-card">
+              <div class="about__review-card-head">
+                <div class="about__review-card-user">
+                  <img src="" alt="" srcset="">
+                </div>
+                <h3>Кимов Александр</h3>
+                <span>Диспетчер</span>
+              </div>
+              <p class="about__review-card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque pariatur odio unde sequi reprehenderit eos voluptatum aliquam eveniet. Obcaecati quasi architecto officia quas modi dolorem assumenda optio totam reiciendis.</p>
+            </div>
+          
+          </div>
+
+          <div class="about__review-slider-nav">
+            <button class="about__review-slider-prev button button--white" id="review-prev">
+              <svg width="9" height="6" viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.93375 1.51079C8.93375 1.43936 8.89803 1.359 8.84446 1.30543L8.39803 0.859C8.34446 0.805429 8.2641 0.769714 8.19268 0.769714C8.12125 0.769714 8.04089 0.805429 7.98732 0.859L4.47839 4.36793L0.969462 0.859C0.91589 0.805429 0.835533 0.769714 0.764105 0.769714C0.683748 0.769714 0.612319 0.805429 0.558748 0.859L0.112319 1.30543C0.0587475 1.359 0.0230331 1.43936 0.0230331 1.51079C0.0230331 1.58221 0.0587475 1.66257 0.112319 1.71614L4.27303 5.87686C4.3266 5.93043 4.40696 5.96614 4.47839 5.96614C4.54982 5.96614 4.63018 5.93043 4.68375 5.87686L8.84446 1.71614C8.89803 1.66257 8.93375 1.58221 8.93375 1.51079Z" />
+              </svg></button>
+            </button>
+            <button class="about__review-slider-next button button--color" id="review-next"><svg width="9" height="6" viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.93375 1.51079C8.93375 1.43936 8.89803 1.359 8.84446 1.30543L8.39803 0.859C8.34446 0.805429 8.2641 0.769714 8.19268 0.769714C8.12125 0.769714 8.04089 0.805429 7.98732 0.859L4.47839 4.36793L0.969462 0.859C0.91589 0.805429 0.835533 0.769714 0.764105 0.769714C0.683748 0.769714 0.612319 0.805429 0.558748 0.859L0.112319 1.30543C0.0587475 1.359 0.0230331 1.43936 0.0230331 1.51079C0.0230331 1.58221 0.0587475 1.66257 0.112319 1.71614L4.27303 5.87686C4.3266 5.93043 4.40696 5.96614 4.47839 5.96614C4.54982 5.96614 4.63018 5.93043 4.68375 5.87686L8.84446 1.71614C8.89803 1.66257 8.93375 1.58221 8.93375 1.51079Z" />
+            </svg></button>
+          </div>
+        </div>
+      </div>
+  </section>
+
   </main>
 
   <footer class="footer">

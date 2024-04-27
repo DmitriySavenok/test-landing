@@ -131,6 +131,7 @@
 .order__form-range-value {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   align-items: center;
   color: var(--white);
   opacity: 0.85;
