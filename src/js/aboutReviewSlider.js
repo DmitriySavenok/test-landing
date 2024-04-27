@@ -4,9 +4,9 @@
   const prev = document.querySelector('#review-prev');
   
   next.addEventListener('click', function(){
-    aboutSlider.scrollBy(35,0);
+    aboutSlider.scrollBy(135,0);
   })
   
   prev.addEventListener('click', function(){
-    aboutSlider.scrollBy(-35,0);
+    aboutSlider.scrollBy(-135,0);
   })
