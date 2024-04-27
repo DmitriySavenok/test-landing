@@ -1,3 +1,5 @@
+const width = window.innerWidth;
+
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
@@ -13,6 +15,12 @@ let options = {
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.element-animation');
 
-for (let elm of elements) {
-  observer.observe(elm);
+if (width > 1024) {
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+} else {
+  for (let elm of elements) {
+    elm.classList.add('element-show')
+  }
 }
