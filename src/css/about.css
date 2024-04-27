@@ -107,11 +107,7 @@
   }
   
   .about__review-slider-nav {
-    position: static;
-    transform: initial;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
+    display: none;
   }
 
   .about__review-slider {
